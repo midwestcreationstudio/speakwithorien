@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://speakwithorien.com/</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://speakwithorien.com/support/</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://speakwithorien.com/contact/</loc><lastmod>2026-10-27</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://speakwithorien.com/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://speakwithorien.com/img/shots/easy-navigation.jpg</image:loc></image:image>
+    <image:image><image:loc>https://speakwithorien.com/img/shots/type-without-touch.jpg</image:loc></image:image>
+    <image:image><image:loc>https://speakwithorien.com/img/shots/dwell-to-select.jpg</image:loc></image:image>
+    <image:image><image:loc>https://speakwithorien.com/img/shots/photos-and-videos.jpg</image:loc></image:image>
+    <image:image><image:loc>https://speakwithorien.com/img/shots/speak-with-your-eyes.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://speakwithorien.com/clinicians/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://speakwithorien.com/img/clinicians/handout-preview.jpg</image:loc></image:image>
+  </url>
+  <url><loc>https://speakwithorien.com/clinicians/handout/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://speakwithorien.com/clinicians/orien-family-setup-guide.pdf</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://speakwithorien.com/support/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://speakwithorien.com/contact/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://speakwithorien.com/privacy/</loc><lastmod>2026-05-12</lastmod></url>
   <url><loc>https://speakwithorien.com/terms/</loc><lastmod>2026-05-12</lastmod></url>
 </urlset>

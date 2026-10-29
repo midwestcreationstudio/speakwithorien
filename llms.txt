@@ -1,0 +1,19 @@
+# Orien
+
+> Orien is a free iPhone app that lets people who can't speak or use their hands communicate using only their eyes. It's made for people living with ALS and the people who care for them. It uses the iPhone's Face ID (TrueDepth) camera, needs no calibration, and keeps everything on the phone. Made by Midwest Creation Studio LLC in Green Bay, Wisconsin.
+
+Key facts:
+- Free on the App Store: https://apps.apple.com/app/id6756767546
+- Needs an iPhone with Face ID (iPhone XR, XS or newer) on iOS 17 or later. iPhone SE won't work. iPad isn't supported yet.
+- Users look up, down, left or right to highlight one of four large targets, then hold their gaze or blink to select. The phone speaks the selection out loud.
+- No account, ads, analytics or servers. Camera images and face data never leave the phone.
+- A communication aid, not a medical device or emergency service.
+
+## Pages
+
+- [Home](https://speakwithorien.com/): what Orien is, how it works, what you need
+- [For clinicians](https://speakwithorien.com/clinicians/): feature matching for speech language pathologists and ALS clinicians, a one visit trial plan, and where Orien fits as a bridge to a dedicated eye gaze device
+- [Family setup guide](https://speakwithorien.com/clinicians/handout/): a printable one page setup guide ([PDF](https://speakwithorien.com/clinicians/orien-family-setup-guide.pdf))
+- [Help](https://speakwithorien.com/support/): supported iPhones, camera permission, speed, voices, troubleshooting
+- [Contact](https://speakwithorien.com/contact/)
+- [Privacy policy](https://speakwithorien.com/privacy/)

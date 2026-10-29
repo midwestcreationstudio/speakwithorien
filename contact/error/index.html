@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#0f0b29">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
@@ -19,7 +20,10 @@
         <img src="/img/icon-192.png" alt="" width="48" height="48">
         Orien
       </a>
-      <a class="header-link" href="/support/">Help</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="header-link" href="/clinicians/">Clinicians</a>
+        <a class="header-link" href="/support/">Help</a>
+      </nav>
     </div>
   </header>
 
@@ -37,6 +41,7 @@
       <nav aria-label="Footer">
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/clinicians/">For clinicians</a></li>
           <li><a href="/support/">Help</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/privacy/">Privacy</a></li>

@@ -8,6 +8,7 @@
   <link rel="canonical" href="https://speakwithorien.com/">
   <meta name="theme-color" content="#0f0b29">
   <meta name="apple-itunes-app" content="app-id=6756767546">
+  <meta name="robots" content="max-image-preview:large">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Orien">
@@ -22,25 +23,70 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/site.css">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "Orien: Speak with Eyes",
-    "operatingSystem": "iOS 17.0 or later",
-    "applicationCategory": "UtilitiesApplication",
-    "description": "A free iPhone app that lets people who can't speak or use their hands communicate using only their eyes.",
-    "url": "https://speakwithorien.com/",
-    "installUrl": "https://apps.apple.com/app/id6756767546",
-    "image": "https://speakwithorien.com/img/icon-512.png",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Midwest Creation Studio LLC",
-      "address": { "@type": "PostalAddress", "addressLocality": "Green Bay", "addressRegion": "WI", "addressCountry": "US" }
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://speakwithorien.com/#org",
+        "name": "Midwest Creation Studio LLC",
+        "url": "https://midwestcreationstudio.com/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Green Bay", "addressRegion": "WI", "addressCountry": "US" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "url": "https://speakwithorien.com/contact/",
+          "availableLanguage": "English"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://speakwithorien.com/#website",
+        "url": "https://speakwithorien.com/",
+        "name": "Orien",
+        "alternateName": "Speak with Orien",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://speakwithorien.com/#org" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://speakwithorien.com/#app",
+        "name": "Orien: Speak with Eyes",
+        "alternateName": "Orien",
+        "operatingSystem": "iOS 17.0 or later",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Augmentative and alternative communication (AAC)",
+        "description": "A free iPhone app that lets people who can't speak or use their hands communicate using only their eyes. Made for people living with ALS and the people who care for them.",
+        "url": "https://speakwithorien.com/",
+        "installUrl": "https://apps.apple.com/app/id6756767546",
+        "downloadUrl": "https://apps.apple.com/app/id6756767546",
+        "sameAs": "https://apps.apple.com/app/id6756767546",
+        "softwareVersion": "1.0",
+        "softwareRequirements": "An iPhone with Face ID (TrueDepth camera) running iOS 17 or later",
+        "isAccessibleForFree": true,
+        "image": "https://speakwithorien.com/img/icon-512.png",
+        "screenshot": [
+          "https://speakwithorien.com/img/shots/easy-navigation.jpg",
+          "https://speakwithorien.com/img/shots/type-without-touch.jpg",
+          "https://speakwithorien.com/img/shots/dwell-to-select.jpg"
+        ],
+        "featureList": [
+          "Eye gaze communication with the iPhone Face ID camera",
+          "No calibration",
+          "Select by holding your gaze or blinking",
+          "Urgent phrases, needs and feelings, with pain location",
+          "Speak to family and friends by name",
+          "Eye controlled keyboard",
+          "Everything stays on the phone"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://speakwithorien.com/#org" }
+      }
+    ]
   }
   </script>
 </head>
@@ -53,7 +99,10 @@
         <img src="/img/icon-192.png" alt="" width="48" height="48">
         Orien
       </a>
-      <a class="header-link" href="/support/">Help</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="header-link" href="/clinicians/">Clinicians</a>
+        <a class="header-link" href="/support/">Help</a>
+      </nav>
     </div>
   </header>
 
@@ -67,7 +116,7 @@
           <a class="button" href="https://apps.apple.com/app/id6756767546">Get Orien free on the App Store</a>
           <p class="fine">Needs an iPhone with Face ID and iOS 17 or later.</p>
         </div>
-        <img class="hero-shot" src="/img/shots/easy-navigation.jpg" alt="Orien on an iPhone: four large buttons for E-Talk, Needs, Next Page and People, one on each side of the screen." width="554" height="1200">
+        <img class="hero-shot" src="/img/shots/easy-navigation.jpg" alt="Orien on an iPhone: four large buttons for E-Talk, Needs, Next Page and People, one on each side of the screen." width="554" height="1200" fetchpriority="high">
       </div>
     </div>
 
@@ -163,7 +212,10 @@
         <div class="note">
           <p>Orien is a bridge, not a replacement. A dedicated eye gaze device and an AAC evaluation are still the right path for many people, and they serve people a phone camera can't.</p>
           <p>Because Orien is free, a family can start today, while they wait on a device or on insurance. If you'd like to try it with patients, or tell us what's missing, we'd love to hear from you.</p>
-          <p><a class="button" href="/contact/">Get in touch</a></p>
+          <div class="cta-row">
+            <a class="button" href="/clinicians/">See the clinician guide</a>
+            <a class="button secondary" href="/contact/?role=clinician">Get in touch</a>
+          </div>
         </div>
       </div>
     </section>
@@ -222,6 +274,7 @@
     <div class="wrap">
       <nav aria-label="Footer">
         <ul>
+          <li><a href="/clinicians/">For clinicians</a></li>
           <li><a href="/support/">Help</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/privacy/">Privacy</a></li>
