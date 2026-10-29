@@ -758,3 +758,108 @@ section + section {
   color: var(--text-soft);
   max-width: var(--read);
 }
+
+/* How it works: the four direction layout, drawn as the first screen */
+
+.how-grid {
+  display: grid;
+  gap: 40px;
+  align-items: start;
+  max-width: 920px;
+}
+
+@media (min-width: 860px) {
+  .how-grid {
+    grid-template-columns: 280px 1fr;
+    gap: 64px;
+  }
+}
+
+.dirs {
+  margin: 0;
+}
+
+.dirs-screen {
+  position: relative;
+  width: 240px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  border: 3px solid var(--line);
+  border-radius: 36px;
+  background: var(--bg-raised);
+}
+
+.dirs-t {
+  position: absolute;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--gold);
+  color: var(--on-gold);
+  font-weight: 800;
+  font-size: 0.85rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.dirs-up {
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dirs-down {
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dirs-left {
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dirs-right {
+  right: 12px;
+  top: 50%;
+  width: 66px;
+  transform: translateY(-50%);
+}
+
+.dirs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  transform: translate(-50%, -50%);
+  color: var(--text-soft);
+  font-size: 0.75rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.dirs figcaption {
+  max-width: 30ch;
+  margin: 16px auto 0;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.why-title {
+  margin-top: 32px;
+}
+
+.why {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--text-soft);
+}
+
+.why li {
+  margin-bottom: 0.6em;
+}
+
+.why li::marker {
+  color: var(--gold);
+}

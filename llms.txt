@@ -6,6 +6,7 @@ Key facts:
 - Free on the App Store: https://apps.apple.com/app/id6756767546
 - Needs an iPhone with Face ID (iPhone XR, XS or newer) on iOS 17 or later. iPhone SE won't work. iPad isn't supported yet.
 - Users look up, down, left or right to highlight one of four large targets, then hold their gaze or blink to select. The phone speaks the selection out loud.
+- Settings: four selection speeds (Standard, Fast, Expert, Instant), separate horizontal and vertical sensitivity for the keyboard's gaze dot, any English iOS voice, and a replayable tutorial.
 - No account, ads, analytics or servers. Camera images and face data never leave the phone.
 - A communication aid, not a medical device or emergency service.
 
